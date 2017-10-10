@@ -1,0 +1,4 @@
+<launch>
+  <node pkg="janken_pkg" name="janken_out_node" type="janken_out_node"/>
+  <node pkg="janken_pkg" name="janken_get_node" type="janken_get_node"/>
+</launch>
