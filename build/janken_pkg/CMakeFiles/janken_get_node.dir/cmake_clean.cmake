@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/janken_get_node.dir/src/listener.cpp.o"
-  "/home/marubashi/practice_ws/devel/lib/janken_pkg/janken_get_node.pdb"
-  "/home/marubashi/practice_ws/devel/lib/janken_pkg/janken_get_node"
+  "/home/marubashi/ros_practice_ws/devel/lib/janken_pkg/janken_get_node.pdb"
+  "/home/marubashi/ros_practice_ws/devel/lib/janken_pkg/janken_get_node"
 )
 
 # Per-language clean rules from dependency scanning.

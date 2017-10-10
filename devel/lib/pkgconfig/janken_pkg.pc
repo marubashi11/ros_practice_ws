@@ -1,8 +1,8 @@
-prefix=/home/marubashi/practice_ws/devel
+prefix=/home/marubashi/ros_practice_ws/devel
 
 Name: janken_pkg
 Description: Description of janken_pkg
 Version: 0.0.0
-Cflags: -I/home/marubashi/practice_ws/devel/include
-Libs: -L/home/marubashi/practice_ws/devel/lib 
+Cflags: -I/home/marubashi/ros_practice_ws/devel/include
+Libs: -L/home/marubashi/ros_practice_ws/devel/lib 
 Requires: roscpp rospy std_msgs

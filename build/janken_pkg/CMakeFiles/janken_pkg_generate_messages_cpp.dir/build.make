@@ -43,36 +43,36 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/marubashi/practice_ws/src
+CMAKE_SOURCE_DIR = /home/marubashi/ros_practice_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/marubashi/practice_ws/build
+CMAKE_BINARY_DIR = /home/marubashi/ros_practice_ws/build
 
 # Utility rule file for janken_pkg_generate_messages_cpp.
 
 # Include the progress variables for this target.
 include janken_pkg/CMakeFiles/janken_pkg_generate_messages_cpp.dir/progress.make
 
-janken_pkg/CMakeFiles/janken_pkg_generate_messages_cpp: /home/marubashi/practice_ws/devel/include/janken_pkg/Num.h
-janken_pkg/CMakeFiles/janken_pkg_generate_messages_cpp: /home/marubashi/practice_ws/devel/include/janken_pkg/AddTwoInts.h
+janken_pkg/CMakeFiles/janken_pkg_generate_messages_cpp: /home/marubashi/ros_practice_ws/devel/include/janken_pkg/Num.h
+janken_pkg/CMakeFiles/janken_pkg_generate_messages_cpp: /home/marubashi/ros_practice_ws/devel/include/janken_pkg/AddTwoInts.h
 
 
-/home/marubashi/practice_ws/devel/include/janken_pkg/Num.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
-/home/marubashi/practice_ws/devel/include/janken_pkg/Num.h: /home/marubashi/practice_ws/src/janken_pkg/msg/Num.msg
-/home/marubashi/practice_ws/devel/include/janken_pkg/Num.h: /opt/ros/kinetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/marubashi/practice_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code from janken_pkg/Num.msg"
-	cd /home/marubashi/practice_ws/build/janken_pkg && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/marubashi/practice_ws/src/janken_pkg/msg/Num.msg -Ijanken_pkg:/home/marubashi/practice_ws/src/janken_pkg/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p janken_pkg -o /home/marubashi/practice_ws/devel/include/janken_pkg -e /opt/ros/kinetic/share/gencpp/cmake/..
+/home/marubashi/ros_practice_ws/devel/include/janken_pkg/Num.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
+/home/marubashi/ros_practice_ws/devel/include/janken_pkg/Num.h: /home/marubashi/ros_practice_ws/src/janken_pkg/msg/Num.msg
+/home/marubashi/ros_practice_ws/devel/include/janken_pkg/Num.h: /opt/ros/kinetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/marubashi/ros_practice_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code from janken_pkg/Num.msg"
+	cd /home/marubashi/ros_practice_ws/build/janken_pkg && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/marubashi/ros_practice_ws/src/janken_pkg/msg/Num.msg -Ijanken_pkg:/home/marubashi/ros_practice_ws/src/janken_pkg/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p janken_pkg -o /home/marubashi/ros_practice_ws/devel/include/janken_pkg -e /opt/ros/kinetic/share/gencpp/cmake/..
 
-/home/marubashi/practice_ws/devel/include/janken_pkg/AddTwoInts.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
-/home/marubashi/practice_ws/devel/include/janken_pkg/AddTwoInts.h: /home/marubashi/practice_ws/src/janken_pkg/srv/AddTwoInts.srv
-/home/marubashi/practice_ws/devel/include/janken_pkg/AddTwoInts.h: /opt/ros/kinetic/share/gencpp/msg.h.template
-/home/marubashi/practice_ws/devel/include/janken_pkg/AddTwoInts.h: /opt/ros/kinetic/share/gencpp/srv.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/marubashi/practice_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating C++ code from janken_pkg/AddTwoInts.srv"
-	cd /home/marubashi/practice_ws/build/janken_pkg && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/marubashi/practice_ws/src/janken_pkg/srv/AddTwoInts.srv -Ijanken_pkg:/home/marubashi/practice_ws/src/janken_pkg/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p janken_pkg -o /home/marubashi/practice_ws/devel/include/janken_pkg -e /opt/ros/kinetic/share/gencpp/cmake/..
+/home/marubashi/ros_practice_ws/devel/include/janken_pkg/AddTwoInts.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
+/home/marubashi/ros_practice_ws/devel/include/janken_pkg/AddTwoInts.h: /home/marubashi/ros_practice_ws/src/janken_pkg/srv/AddTwoInts.srv
+/home/marubashi/ros_practice_ws/devel/include/janken_pkg/AddTwoInts.h: /opt/ros/kinetic/share/gencpp/msg.h.template
+/home/marubashi/ros_practice_ws/devel/include/janken_pkg/AddTwoInts.h: /opt/ros/kinetic/share/gencpp/srv.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/marubashi/ros_practice_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating C++ code from janken_pkg/AddTwoInts.srv"
+	cd /home/marubashi/ros_practice_ws/build/janken_pkg && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/marubashi/ros_practice_ws/src/janken_pkg/srv/AddTwoInts.srv -Ijanken_pkg:/home/marubashi/ros_practice_ws/src/janken_pkg/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p janken_pkg -o /home/marubashi/ros_practice_ws/devel/include/janken_pkg -e /opt/ros/kinetic/share/gencpp/cmake/..
 
 janken_pkg_generate_messages_cpp: janken_pkg/CMakeFiles/janken_pkg_generate_messages_cpp
-janken_pkg_generate_messages_cpp: /home/marubashi/practice_ws/devel/include/janken_pkg/Num.h
-janken_pkg_generate_messages_cpp: /home/marubashi/practice_ws/devel/include/janken_pkg/AddTwoInts.h
+janken_pkg_generate_messages_cpp: /home/marubashi/ros_practice_ws/devel/include/janken_pkg/Num.h
+janken_pkg_generate_messages_cpp: /home/marubashi/ros_practice_ws/devel/include/janken_pkg/AddTwoInts.h
 janken_pkg_generate_messages_cpp: janken_pkg/CMakeFiles/janken_pkg_generate_messages_cpp.dir/build.make
 
 .PHONY : janken_pkg_generate_messages_cpp
@@ -83,10 +83,10 @@ janken_pkg/CMakeFiles/janken_pkg_generate_messages_cpp.dir/build: janken_pkg_gen
 .PHONY : janken_pkg/CMakeFiles/janken_pkg_generate_messages_cpp.dir/build
 
 janken_pkg/CMakeFiles/janken_pkg_generate_messages_cpp.dir/clean:
-	cd /home/marubashi/practice_ws/build/janken_pkg && $(CMAKE_COMMAND) -P CMakeFiles/janken_pkg_generate_messages_cpp.dir/cmake_clean.cmake
+	cd /home/marubashi/ros_practice_ws/build/janken_pkg && $(CMAKE_COMMAND) -P CMakeFiles/janken_pkg_generate_messages_cpp.dir/cmake_clean.cmake
 .PHONY : janken_pkg/CMakeFiles/janken_pkg_generate_messages_cpp.dir/clean
 
 janken_pkg/CMakeFiles/janken_pkg_generate_messages_cpp.dir/depend:
-	cd /home/marubashi/practice_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/marubashi/practice_ws/src /home/marubashi/practice_ws/src/janken_pkg /home/marubashi/practice_ws/build /home/marubashi/practice_ws/build/janken_pkg /home/marubashi/practice_ws/build/janken_pkg/CMakeFiles/janken_pkg_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/marubashi/ros_practice_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/marubashi/ros_practice_ws/src /home/marubashi/ros_practice_ws/src/janken_pkg /home/marubashi/ros_practice_ws/build /home/marubashi/ros_practice_ws/build/janken_pkg /home/marubashi/ros_practice_ws/build/janken_pkg/CMakeFiles/janken_pkg_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : janken_pkg/CMakeFiles/janken_pkg_generate_messages_cpp.dir/depend
 

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/marubashi/practice_ws/src
+CMAKE_SOURCE_DIR = /home/marubashi/ros_practice_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/marubashi/practice_ws/build
+CMAKE_BINARY_DIR = /home/marubashi/ros_practice_ws/build
 
 # Utility rule file for _janken_pkg_generate_messages_check_deps_Num.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/marubashi/practice_ws/build
 include janken_pkg/CMakeFiles/_janken_pkg_generate_messages_check_deps_Num.dir/progress.make
 
 janken_pkg/CMakeFiles/_janken_pkg_generate_messages_check_deps_Num:
-	cd /home/marubashi/practice_ws/build/janken_pkg && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py janken_pkg /home/marubashi/practice_ws/src/janken_pkg/msg/Num.msg 
+	cd /home/marubashi/ros_practice_ws/build/janken_pkg && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py janken_pkg /home/marubashi/ros_practice_ws/src/janken_pkg/msg/Num.msg 
 
 _janken_pkg_generate_messages_check_deps_Num: janken_pkg/CMakeFiles/_janken_pkg_generate_messages_check_deps_Num
 _janken_pkg_generate_messages_check_deps_Num: janken_pkg/CMakeFiles/_janken_pkg_generate_messages_check_deps_Num.dir/build.make
@@ -67,10 +67,10 @@ janken_pkg/CMakeFiles/_janken_pkg_generate_messages_check_deps_Num.dir/build: _j
 .PHONY : janken_pkg/CMakeFiles/_janken_pkg_generate_messages_check_deps_Num.dir/build
 
 janken_pkg/CMakeFiles/_janken_pkg_generate_messages_check_deps_Num.dir/clean:
-	cd /home/marubashi/practice_ws/build/janken_pkg && $(CMAKE_COMMAND) -P CMakeFiles/_janken_pkg_generate_messages_check_deps_Num.dir/cmake_clean.cmake
+	cd /home/marubashi/ros_practice_ws/build/janken_pkg && $(CMAKE_COMMAND) -P CMakeFiles/_janken_pkg_generate_messages_check_deps_Num.dir/cmake_clean.cmake
 .PHONY : janken_pkg/CMakeFiles/_janken_pkg_generate_messages_check_deps_Num.dir/clean
 
 janken_pkg/CMakeFiles/_janken_pkg_generate_messages_check_deps_Num.dir/depend:
-	cd /home/marubashi/practice_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/marubashi/practice_ws/src /home/marubashi/practice_ws/src/janken_pkg /home/marubashi/practice_ws/build /home/marubashi/practice_ws/build/janken_pkg /home/marubashi/practice_ws/build/janken_pkg/CMakeFiles/_janken_pkg_generate_messages_check_deps_Num.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/marubashi/ros_practice_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/marubashi/ros_practice_ws/src /home/marubashi/ros_practice_ws/src/janken_pkg /home/marubashi/ros_practice_ws/build /home/marubashi/ros_practice_ws/build/janken_pkg /home/marubashi/ros_practice_ws/build/janken_pkg/CMakeFiles/_janken_pkg_generate_messages_check_deps_Num.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : janken_pkg/CMakeFiles/_janken_pkg_generate_messages_check_deps_Num.dir/depend
 

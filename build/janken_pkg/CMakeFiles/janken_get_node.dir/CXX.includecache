@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/marubashi/practice_ws/src/janken_pkg/src/listener.cpp
+/home/marubashi/ros_practice_ws/src/janken_pkg/src/listener.cpp
 ros/ros.h
 -
 std_msgs/String.h

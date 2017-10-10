@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/marubashi/practice_ws/src
+CMAKE_SOURCE_DIR = /home/marubashi/ros_practice_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/marubashi/practice_ws/build
+CMAKE_BINARY_DIR = /home/marubashi/ros_practice_ws/build
 
 # Utility rule file for std_msgs_generate_messages_cpp.
 
@@ -63,10 +63,10 @@ janken_pkg/CMakeFiles/std_msgs_generate_messages_cpp.dir/build: std_msgs_generat
 .PHONY : janken_pkg/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
 
 janken_pkg/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean:
-	cd /home/marubashi/practice_ws/build/janken_pkg && $(CMAKE_COMMAND) -P CMakeFiles/std_msgs_generate_messages_cpp.dir/cmake_clean.cmake
+	cd /home/marubashi/ros_practice_ws/build/janken_pkg && $(CMAKE_COMMAND) -P CMakeFiles/std_msgs_generate_messages_cpp.dir/cmake_clean.cmake
 .PHONY : janken_pkg/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
 
 janken_pkg/CMakeFiles/std_msgs_generate_messages_cpp.dir/depend:
-	cd /home/marubashi/practice_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/marubashi/practice_ws/src /home/marubashi/practice_ws/src/janken_pkg /home/marubashi/practice_ws/build /home/marubashi/practice_ws/build/janken_pkg /home/marubashi/practice_ws/build/janken_pkg/CMakeFiles/std_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/marubashi/ros_practice_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/marubashi/ros_practice_ws/src /home/marubashi/ros_practice_ws/src/janken_pkg /home/marubashi/ros_practice_ws/build /home/marubashi/ros_practice_ws/build/janken_pkg /home/marubashi/ros_practice_ws/build/janken_pkg/CMakeFiles/std_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : janken_pkg/CMakeFiles/std_msgs_generate_messages_cpp.dir/depend
 

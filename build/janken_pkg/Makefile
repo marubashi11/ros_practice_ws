@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/marubashi/practice_ws/src
+CMAKE_SOURCE_DIR = /home/marubashi/ros_practice_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/marubashi/practice_ws/build
+CMAKE_BINARY_DIR = /home/marubashi/ros_practice_ws/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -135,14 +135,14 @@ install/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/marubashi/practice_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/marubashi/practice_ws/build/CMakeFiles /home/marubashi/practice_ws/build/janken_pkg/CMakeFiles/progress.marks
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marubashi/practice_ws/build/CMakeFiles 0
+	cd /home/marubashi/ros_practice_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/marubashi/ros_practice_ws/build/CMakeFiles /home/marubashi/ros_practice_ws/build/janken_pkg/CMakeFiles/progress.marks
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marubashi/ros_practice_ws/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/clean
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/clean
 .PHONY : clean
 
 # The main clean target
@@ -152,22 +152,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/preinstall
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/preinstall
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/marubashi/practice_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/marubashi/ros_practice_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 janken_pkg/CMakeFiles/janken_out_node.dir/rule:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/CMakeFiles/janken_out_node.dir/rule
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/CMakeFiles/janken_out_node.dir/rule
 .PHONY : janken_pkg/CMakeFiles/janken_out_node.dir/rule
 
 # Convenience name for target.
@@ -177,12 +177,12 @@ janken_out_node: janken_pkg/CMakeFiles/janken_out_node.dir/rule
 
 # fast build rule for target.
 janken_out_node/fast:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/janken_out_node.dir/build.make janken_pkg/CMakeFiles/janken_out_node.dir/build
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/janken_out_node.dir/build.make janken_pkg/CMakeFiles/janken_out_node.dir/build
 .PHONY : janken_out_node/fast
 
 # Convenience name for target.
 janken_pkg/CMakeFiles/janken_pkg_genpy.dir/rule:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/CMakeFiles/janken_pkg_genpy.dir/rule
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/CMakeFiles/janken_pkg_genpy.dir/rule
 .PHONY : janken_pkg/CMakeFiles/janken_pkg_genpy.dir/rule
 
 # Convenience name for target.
@@ -192,12 +192,12 @@ janken_pkg_genpy: janken_pkg/CMakeFiles/janken_pkg_genpy.dir/rule
 
 # fast build rule for target.
 janken_pkg_genpy/fast:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/janken_pkg_genpy.dir/build.make janken_pkg/CMakeFiles/janken_pkg_genpy.dir/build
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/janken_pkg_genpy.dir/build.make janken_pkg/CMakeFiles/janken_pkg_genpy.dir/build
 .PHONY : janken_pkg_genpy/fast
 
 # Convenience name for target.
 janken_pkg/CMakeFiles/janken_pkg_generate_messages_py.dir/rule:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/CMakeFiles/janken_pkg_generate_messages_py.dir/rule
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/CMakeFiles/janken_pkg_generate_messages_py.dir/rule
 .PHONY : janken_pkg/CMakeFiles/janken_pkg_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -207,12 +207,12 @@ janken_pkg_generate_messages_py: janken_pkg/CMakeFiles/janken_pkg_generate_messa
 
 # fast build rule for target.
 janken_pkg_generate_messages_py/fast:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/janken_pkg_generate_messages_py.dir/build.make janken_pkg/CMakeFiles/janken_pkg_generate_messages_py.dir/build
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/janken_pkg_generate_messages_py.dir/build.make janken_pkg/CMakeFiles/janken_pkg_generate_messages_py.dir/build
 .PHONY : janken_pkg_generate_messages_py/fast
 
 # Convenience name for target.
 janken_pkg/CMakeFiles/janken_pkg_generate_messages_lisp.dir/rule:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/CMakeFiles/janken_pkg_generate_messages_lisp.dir/rule
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/CMakeFiles/janken_pkg_generate_messages_lisp.dir/rule
 .PHONY : janken_pkg/CMakeFiles/janken_pkg_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -222,12 +222,12 @@ janken_pkg_generate_messages_lisp: janken_pkg/CMakeFiles/janken_pkg_generate_mes
 
 # fast build rule for target.
 janken_pkg_generate_messages_lisp/fast:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/janken_pkg_generate_messages_lisp.dir/build.make janken_pkg/CMakeFiles/janken_pkg_generate_messages_lisp.dir/build
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/janken_pkg_generate_messages_lisp.dir/build.make janken_pkg/CMakeFiles/janken_pkg_generate_messages_lisp.dir/build
 .PHONY : janken_pkg_generate_messages_lisp/fast
 
 # Convenience name for target.
 janken_pkg/CMakeFiles/std_msgs_generate_messages_py.dir/rule:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/CMakeFiles/std_msgs_generate_messages_py.dir/rule
 .PHONY : janken_pkg/CMakeFiles/std_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -237,12 +237,12 @@ std_msgs_generate_messages_py: janken_pkg/CMakeFiles/std_msgs_generate_messages_
 
 # fast build rule for target.
 std_msgs_generate_messages_py/fast:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/std_msgs_generate_messages_py.dir/build.make janken_pkg/CMakeFiles/std_msgs_generate_messages_py.dir/build
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/std_msgs_generate_messages_py.dir/build.make janken_pkg/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 janken_pkg/CMakeFiles/janken_pkg_gennodejs.dir/rule:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/CMakeFiles/janken_pkg_gennodejs.dir/rule
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/CMakeFiles/janken_pkg_gennodejs.dir/rule
 .PHONY : janken_pkg/CMakeFiles/janken_pkg_gennodejs.dir/rule
 
 # Convenience name for target.
@@ -252,12 +252,12 @@ janken_pkg_gennodejs: janken_pkg/CMakeFiles/janken_pkg_gennodejs.dir/rule
 
 # fast build rule for target.
 janken_pkg_gennodejs/fast:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/janken_pkg_gennodejs.dir/build.make janken_pkg/CMakeFiles/janken_pkg_gennodejs.dir/build
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/janken_pkg_gennodejs.dir/build.make janken_pkg/CMakeFiles/janken_pkg_gennodejs.dir/build
 .PHONY : janken_pkg_gennodejs/fast
 
 # Convenience name for target.
 janken_pkg/CMakeFiles/janken_pkg_generate_messages_cpp.dir/rule:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/CMakeFiles/janken_pkg_generate_messages_cpp.dir/rule
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/CMakeFiles/janken_pkg_generate_messages_cpp.dir/rule
 .PHONY : janken_pkg/CMakeFiles/janken_pkg_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -267,12 +267,12 @@ janken_pkg_generate_messages_cpp: janken_pkg/CMakeFiles/janken_pkg_generate_mess
 
 # fast build rule for target.
 janken_pkg_generate_messages_cpp/fast:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/janken_pkg_generate_messages_cpp.dir/build.make janken_pkg/CMakeFiles/janken_pkg_generate_messages_cpp.dir/build
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/janken_pkg_generate_messages_cpp.dir/build.make janken_pkg/CMakeFiles/janken_pkg_generate_messages_cpp.dir/build
 .PHONY : janken_pkg_generate_messages_cpp/fast
 
 # Convenience name for target.
 janken_pkg/CMakeFiles/roscpp_generate_messages_py.dir/rule:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/CMakeFiles/roscpp_generate_messages_py.dir/rule
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/CMakeFiles/roscpp_generate_messages_py.dir/rule
 .PHONY : janken_pkg/CMakeFiles/roscpp_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -282,12 +282,12 @@ roscpp_generate_messages_py: janken_pkg/CMakeFiles/roscpp_generate_messages_py.d
 
 # fast build rule for target.
 roscpp_generate_messages_py/fast:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/roscpp_generate_messages_py.dir/build.make janken_pkg/CMakeFiles/roscpp_generate_messages_py.dir/build
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/roscpp_generate_messages_py.dir/build.make janken_pkg/CMakeFiles/roscpp_generate_messages_py.dir/build
 .PHONY : roscpp_generate_messages_py/fast
 
 # Convenience name for target.
 janken_pkg/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
 .PHONY : janken_pkg/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -297,12 +297,12 @@ rosgraph_msgs_generate_messages_eus: janken_pkg/CMakeFiles/rosgraph_msgs_generat
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_eus/fast:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make janken_pkg/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make janken_pkg/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
 .PHONY : rosgraph_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 janken_pkg/CMakeFiles/janken_get_node.dir/rule:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/CMakeFiles/janken_get_node.dir/rule
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/CMakeFiles/janken_get_node.dir/rule
 .PHONY : janken_pkg/CMakeFiles/janken_get_node.dir/rule
 
 # Convenience name for target.
@@ -312,12 +312,12 @@ janken_get_node: janken_pkg/CMakeFiles/janken_get_node.dir/rule
 
 # fast build rule for target.
 janken_get_node/fast:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/janken_get_node.dir/build.make janken_pkg/CMakeFiles/janken_get_node.dir/build
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/janken_get_node.dir/build.make janken_pkg/CMakeFiles/janken_get_node.dir/build
 .PHONY : janken_get_node/fast
 
 # Convenience name for target.
 janken_pkg/CMakeFiles/janken_pkg_generate_messages_eus.dir/rule:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/CMakeFiles/janken_pkg_generate_messages_eus.dir/rule
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/CMakeFiles/janken_pkg_generate_messages_eus.dir/rule
 .PHONY : janken_pkg/CMakeFiles/janken_pkg_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -327,12 +327,12 @@ janken_pkg_generate_messages_eus: janken_pkg/CMakeFiles/janken_pkg_generate_mess
 
 # fast build rule for target.
 janken_pkg_generate_messages_eus/fast:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/janken_pkg_generate_messages_eus.dir/build.make janken_pkg/CMakeFiles/janken_pkg_generate_messages_eus.dir/build
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/janken_pkg_generate_messages_eus.dir/build.make janken_pkg/CMakeFiles/janken_pkg_generate_messages_eus.dir/build
 .PHONY : janken_pkg_generate_messages_eus/fast
 
 # Convenience name for target.
 janken_pkg/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
 .PHONY : janken_pkg/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -342,12 +342,12 @@ rosgraph_msgs_generate_messages_nodejs: janken_pkg/CMakeFiles/rosgraph_msgs_gene
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_nodejs/fast:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make janken_pkg/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make janken_pkg/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
 .PHONY : rosgraph_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 janken_pkg/CMakeFiles/janken_pkg_gencpp.dir/rule:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/CMakeFiles/janken_pkg_gencpp.dir/rule
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/CMakeFiles/janken_pkg_gencpp.dir/rule
 .PHONY : janken_pkg/CMakeFiles/janken_pkg_gencpp.dir/rule
 
 # Convenience name for target.
@@ -357,12 +357,12 @@ janken_pkg_gencpp: janken_pkg/CMakeFiles/janken_pkg_gencpp.dir/rule
 
 # fast build rule for target.
 janken_pkg_gencpp/fast:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/janken_pkg_gencpp.dir/build.make janken_pkg/CMakeFiles/janken_pkg_gencpp.dir/build
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/janken_pkg_gencpp.dir/build.make janken_pkg/CMakeFiles/janken_pkg_gencpp.dir/build
 .PHONY : janken_pkg_gencpp/fast
 
 # Convenience name for target.
 janken_pkg/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 .PHONY : janken_pkg/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -372,12 +372,12 @@ rosgraph_msgs_generate_messages_cpp: janken_pkg/CMakeFiles/rosgraph_msgs_generat
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_cpp/fast:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make janken_pkg/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make janken_pkg/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 janken_pkg/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
 .PHONY : janken_pkg/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -387,12 +387,12 @@ std_msgs_generate_messages_cpp: janken_pkg/CMakeFiles/std_msgs_generate_messages
 
 # fast build rule for target.
 std_msgs_generate_messages_cpp/fast:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make janken_pkg/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make janken_pkg/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
 .PHONY : std_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 janken_pkg/CMakeFiles/janken_pkg_geneus.dir/rule:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/CMakeFiles/janken_pkg_geneus.dir/rule
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/CMakeFiles/janken_pkg_geneus.dir/rule
 .PHONY : janken_pkg/CMakeFiles/janken_pkg_geneus.dir/rule
 
 # Convenience name for target.
@@ -402,12 +402,12 @@ janken_pkg_geneus: janken_pkg/CMakeFiles/janken_pkg_geneus.dir/rule
 
 # fast build rule for target.
 janken_pkg_geneus/fast:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/janken_pkg_geneus.dir/build.make janken_pkg/CMakeFiles/janken_pkg_geneus.dir/build
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/janken_pkg_geneus.dir/build.make janken_pkg/CMakeFiles/janken_pkg_geneus.dir/build
 .PHONY : janken_pkg_geneus/fast
 
 # Convenience name for target.
 janken_pkg/CMakeFiles/roscpp_generate_messages_eus.dir/rule:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/CMakeFiles/roscpp_generate_messages_eus.dir/rule
 .PHONY : janken_pkg/CMakeFiles/roscpp_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -417,12 +417,12 @@ roscpp_generate_messages_eus: janken_pkg/CMakeFiles/roscpp_generate_messages_eus
 
 # fast build rule for target.
 roscpp_generate_messages_eus/fast:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/roscpp_generate_messages_eus.dir/build.make janken_pkg/CMakeFiles/roscpp_generate_messages_eus.dir/build
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/roscpp_generate_messages_eus.dir/build.make janken_pkg/CMakeFiles/roscpp_generate_messages_eus.dir/build
 .PHONY : roscpp_generate_messages_eus/fast
 
 # Convenience name for target.
 janken_pkg/CMakeFiles/janken_pkg_genlisp.dir/rule:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/CMakeFiles/janken_pkg_genlisp.dir/rule
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/CMakeFiles/janken_pkg_genlisp.dir/rule
 .PHONY : janken_pkg/CMakeFiles/janken_pkg_genlisp.dir/rule
 
 # Convenience name for target.
@@ -432,12 +432,12 @@ janken_pkg_genlisp: janken_pkg/CMakeFiles/janken_pkg_genlisp.dir/rule
 
 # fast build rule for target.
 janken_pkg_genlisp/fast:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/janken_pkg_genlisp.dir/build.make janken_pkg/CMakeFiles/janken_pkg_genlisp.dir/build
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/janken_pkg_genlisp.dir/build.make janken_pkg/CMakeFiles/janken_pkg_genlisp.dir/build
 .PHONY : janken_pkg_genlisp/fast
 
 # Convenience name for target.
 janken_pkg/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
 .PHONY : janken_pkg/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -447,12 +447,12 @@ rosgraph_msgs_generate_messages_py: janken_pkg/CMakeFiles/rosgraph_msgs_generate
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_py/fast:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make janken_pkg/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make janken_pkg/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
 .PHONY : rosgraph_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 janken_pkg/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
 .PHONY : janken_pkg/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -462,12 +462,12 @@ rosgraph_msgs_generate_messages_lisp: janken_pkg/CMakeFiles/rosgraph_msgs_genera
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_lisp/fast:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make janken_pkg/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make janken_pkg/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 janken_pkg/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
 .PHONY : janken_pkg/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -477,12 +477,12 @@ roscpp_generate_messages_nodejs: janken_pkg/CMakeFiles/roscpp_generate_messages_
 
 # fast build rule for target.
 roscpp_generate_messages_nodejs/fast:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make janken_pkg/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make janken_pkg/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
 .PHONY : roscpp_generate_messages_nodejs/fast
 
 # Convenience name for target.
 janken_pkg/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
 .PHONY : janken_pkg/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -492,12 +492,12 @@ std_msgs_generate_messages_nodejs: janken_pkg/CMakeFiles/std_msgs_generate_messa
 
 # fast build rule for target.
 std_msgs_generate_messages_nodejs/fast:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make janken_pkg/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make janken_pkg/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
 .PHONY : std_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 janken_pkg/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 .PHONY : janken_pkg/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -507,12 +507,12 @@ roscpp_generate_messages_lisp: janken_pkg/CMakeFiles/roscpp_generate_messages_li
 
 # fast build rule for target.
 roscpp_generate_messages_lisp/fast:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make janken_pkg/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make janken_pkg/CMakeFiles/roscpp_generate_messages_lisp.dir/build
 .PHONY : roscpp_generate_messages_lisp/fast
 
 # Convenience name for target.
 janken_pkg/CMakeFiles/std_msgs_generate_messages_eus.dir/rule:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
 .PHONY : janken_pkg/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -522,12 +522,12 @@ std_msgs_generate_messages_eus: janken_pkg/CMakeFiles/std_msgs_generate_messages
 
 # fast build rule for target.
 std_msgs_generate_messages_eus/fast:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make janken_pkg/CMakeFiles/std_msgs_generate_messages_eus.dir/build
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make janken_pkg/CMakeFiles/std_msgs_generate_messages_eus.dir/build
 .PHONY : std_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 janken_pkg/CMakeFiles/janken_pkg_generate_messages_nodejs.dir/rule:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/CMakeFiles/janken_pkg_generate_messages_nodejs.dir/rule
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/CMakeFiles/janken_pkg_generate_messages_nodejs.dir/rule
 .PHONY : janken_pkg/CMakeFiles/janken_pkg_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -537,12 +537,12 @@ janken_pkg_generate_messages_nodejs: janken_pkg/CMakeFiles/janken_pkg_generate_m
 
 # fast build rule for target.
 janken_pkg_generate_messages_nodejs/fast:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/janken_pkg_generate_messages_nodejs.dir/build.make janken_pkg/CMakeFiles/janken_pkg_generate_messages_nodejs.dir/build
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/janken_pkg_generate_messages_nodejs.dir/build.make janken_pkg/CMakeFiles/janken_pkg_generate_messages_nodejs.dir/build
 .PHONY : janken_pkg_generate_messages_nodejs/fast
 
 # Convenience name for target.
 janken_pkg/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
 .PHONY : janken_pkg/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -552,12 +552,12 @@ std_msgs_generate_messages_lisp: janken_pkg/CMakeFiles/std_msgs_generate_message
 
 # fast build rule for target.
 std_msgs_generate_messages_lisp/fast:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make janken_pkg/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make janken_pkg/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
 .PHONY : std_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 janken_pkg/CMakeFiles/janken_pkg_generate_messages.dir/rule:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/CMakeFiles/janken_pkg_generate_messages.dir/rule
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/CMakeFiles/janken_pkg_generate_messages.dir/rule
 .PHONY : janken_pkg/CMakeFiles/janken_pkg_generate_messages.dir/rule
 
 # Convenience name for target.
@@ -567,12 +567,12 @@ janken_pkg_generate_messages: janken_pkg/CMakeFiles/janken_pkg_generate_messages
 
 # fast build rule for target.
 janken_pkg_generate_messages/fast:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/janken_pkg_generate_messages.dir/build.make janken_pkg/CMakeFiles/janken_pkg_generate_messages.dir/build
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/janken_pkg_generate_messages.dir/build.make janken_pkg/CMakeFiles/janken_pkg_generate_messages.dir/build
 .PHONY : janken_pkg_generate_messages/fast
 
 # Convenience name for target.
 janken_pkg/CMakeFiles/_janken_pkg_generate_messages_check_deps_Num.dir/rule:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/CMakeFiles/_janken_pkg_generate_messages_check_deps_Num.dir/rule
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/CMakeFiles/_janken_pkg_generate_messages_check_deps_Num.dir/rule
 .PHONY : janken_pkg/CMakeFiles/_janken_pkg_generate_messages_check_deps_Num.dir/rule
 
 # Convenience name for target.
@@ -582,12 +582,12 @@ _janken_pkg_generate_messages_check_deps_Num: janken_pkg/CMakeFiles/_janken_pkg_
 
 # fast build rule for target.
 _janken_pkg_generate_messages_check_deps_Num/fast:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/_janken_pkg_generate_messages_check_deps_Num.dir/build.make janken_pkg/CMakeFiles/_janken_pkg_generate_messages_check_deps_Num.dir/build
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/_janken_pkg_generate_messages_check_deps_Num.dir/build.make janken_pkg/CMakeFiles/_janken_pkg_generate_messages_check_deps_Num.dir/build
 .PHONY : _janken_pkg_generate_messages_check_deps_Num/fast
 
 # Convenience name for target.
 janken_pkg/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 .PHONY : janken_pkg/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -597,12 +597,12 @@ roscpp_generate_messages_cpp: janken_pkg/CMakeFiles/roscpp_generate_messages_cpp
 
 # fast build rule for target.
 roscpp_generate_messages_cpp/fast:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make janken_pkg/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make janken_pkg/CMakeFiles/roscpp_generate_messages_cpp.dir/build
 .PHONY : roscpp_generate_messages_cpp/fast
 
 # Convenience name for target.
 janken_pkg/CMakeFiles/_janken_pkg_generate_messages_check_deps_AddTwoInts.dir/rule:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/CMakeFiles/_janken_pkg_generate_messages_check_deps_AddTwoInts.dir/rule
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f CMakeFiles/Makefile2 janken_pkg/CMakeFiles/_janken_pkg_generate_messages_check_deps_AddTwoInts.dir/rule
 .PHONY : janken_pkg/CMakeFiles/_janken_pkg_generate_messages_check_deps_AddTwoInts.dir/rule
 
 # Convenience name for target.
@@ -612,7 +612,7 @@ _janken_pkg_generate_messages_check_deps_AddTwoInts: janken_pkg/CMakeFiles/_jank
 
 # fast build rule for target.
 _janken_pkg_generate_messages_check_deps_AddTwoInts/fast:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/_janken_pkg_generate_messages_check_deps_AddTwoInts.dir/build.make janken_pkg/CMakeFiles/_janken_pkg_generate_messages_check_deps_AddTwoInts.dir/build
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/_janken_pkg_generate_messages_check_deps_AddTwoInts.dir/build.make janken_pkg/CMakeFiles/_janken_pkg_generate_messages_check_deps_AddTwoInts.dir/build
 .PHONY : _janken_pkg_generate_messages_check_deps_AddTwoInts/fast
 
 src/listener.o: src/listener.cpp.o
@@ -621,7 +621,7 @@ src/listener.o: src/listener.cpp.o
 
 # target to build an object file
 src/listener.cpp.o:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/janken_get_node.dir/build.make janken_pkg/CMakeFiles/janken_get_node.dir/src/listener.cpp.o
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/janken_get_node.dir/build.make janken_pkg/CMakeFiles/janken_get_node.dir/src/listener.cpp.o
 .PHONY : src/listener.cpp.o
 
 src/listener.i: src/listener.cpp.i
@@ -630,7 +630,7 @@ src/listener.i: src/listener.cpp.i
 
 # target to preprocess a source file
 src/listener.cpp.i:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/janken_get_node.dir/build.make janken_pkg/CMakeFiles/janken_get_node.dir/src/listener.cpp.i
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/janken_get_node.dir/build.make janken_pkg/CMakeFiles/janken_get_node.dir/src/listener.cpp.i
 .PHONY : src/listener.cpp.i
 
 src/listener.s: src/listener.cpp.s
@@ -639,7 +639,7 @@ src/listener.s: src/listener.cpp.s
 
 # target to generate assembly for a file
 src/listener.cpp.s:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/janken_get_node.dir/build.make janken_pkg/CMakeFiles/janken_get_node.dir/src/listener.cpp.s
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/janken_get_node.dir/build.make janken_pkg/CMakeFiles/janken_get_node.dir/src/listener.cpp.s
 .PHONY : src/listener.cpp.s
 
 src/talker.o: src/talker.cpp.o
@@ -648,7 +648,7 @@ src/talker.o: src/talker.cpp.o
 
 # target to build an object file
 src/talker.cpp.o:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/janken_out_node.dir/build.make janken_pkg/CMakeFiles/janken_out_node.dir/src/talker.cpp.o
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/janken_out_node.dir/build.make janken_pkg/CMakeFiles/janken_out_node.dir/src/talker.cpp.o
 .PHONY : src/talker.cpp.o
 
 src/talker.i: src/talker.cpp.i
@@ -657,7 +657,7 @@ src/talker.i: src/talker.cpp.i
 
 # target to preprocess a source file
 src/talker.cpp.i:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/janken_out_node.dir/build.make janken_pkg/CMakeFiles/janken_out_node.dir/src/talker.cpp.i
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/janken_out_node.dir/build.make janken_pkg/CMakeFiles/janken_out_node.dir/src/talker.cpp.i
 .PHONY : src/talker.cpp.i
 
 src/talker.s: src/talker.cpp.s
@@ -666,7 +666,7 @@ src/talker.s: src/talker.cpp.s
 
 # target to generate assembly for a file
 src/talker.cpp.s:
-	cd /home/marubashi/practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/janken_out_node.dir/build.make janken_pkg/CMakeFiles/janken_out_node.dir/src/talker.cpp.s
+	cd /home/marubashi/ros_practice_ws/build && $(MAKE) -f janken_pkg/CMakeFiles/janken_out_node.dir/build.make janken_pkg/CMakeFiles/janken_out_node.dir/src/talker.cpp.s
 .PHONY : src/talker.cpp.s
 
 # Help Target
@@ -729,6 +729,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/marubashi/practice_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/marubashi/ros_practice_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

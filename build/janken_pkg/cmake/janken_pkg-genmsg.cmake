@@ -2,7 +2,7 @@
 
 message(STATUS "janken_pkg: 1 messages, 1 services")
 
-set(MSG_I_FLAGS "-Ijanken_pkg:/home/marubashi/practice_ws/src/janken_pkg/msg;-Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg")
+set(MSG_I_FLAGS "-Ijanken_pkg:/home/marubashi/ros_practice_ws/src/janken_pkg/msg;-Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
@@ -17,14 +17,14 @@ add_custom_target(janken_pkg_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/home/marubashi/practice_ws/src/janken_pkg/srv/AddTwoInts.srv" NAME_WE)
+get_filename_component(_filename "/home/marubashi/ros_practice_ws/src/janken_pkg/msg/Num.msg" NAME_WE)
 add_custom_target(_janken_pkg_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "janken_pkg" "/home/marubashi/practice_ws/src/janken_pkg/srv/AddTwoInts.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "janken_pkg" "/home/marubashi/ros_practice_ws/src/janken_pkg/msg/Num.msg" ""
 )
 
-get_filename_component(_filename "/home/marubashi/practice_ws/src/janken_pkg/msg/Num.msg" NAME_WE)
+get_filename_component(_filename "/home/marubashi/ros_practice_ws/src/janken_pkg/srv/AddTwoInts.srv" NAME_WE)
 add_custom_target(_janken_pkg_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "janken_pkg" "/home/marubashi/practice_ws/src/janken_pkg/msg/Num.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "janken_pkg" "/home/marubashi/ros_practice_ws/src/janken_pkg/srv/AddTwoInts.srv" ""
 )
 
 #
@@ -34,7 +34,7 @@ add_custom_target(_janken_pkg_generate_messages_check_deps_${_filename}
 ### Section generating for lang: gencpp
 ### Generating Messages
 _generate_msg_cpp(janken_pkg
-  "/home/marubashi/practice_ws/src/janken_pkg/msg/Num.msg"
+  "/home/marubashi/ros_practice_ws/src/janken_pkg/msg/Num.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/janken_pkg
@@ -42,7 +42,7 @@ _generate_msg_cpp(janken_pkg
 
 ### Generating Services
 _generate_srv_cpp(janken_pkg
-  "/home/marubashi/practice_ws/src/janken_pkg/srv/AddTwoInts.srv"
+  "/home/marubashi/ros_practice_ws/src/janken_pkg/srv/AddTwoInts.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/janken_pkg
@@ -60,9 +60,9 @@ add_custom_target(janken_pkg_generate_messages_cpp
 add_dependencies(janken_pkg_generate_messages janken_pkg_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/marubashi/practice_ws/src/janken_pkg/srv/AddTwoInts.srv" NAME_WE)
+get_filename_component(_filename "/home/marubashi/ros_practice_ws/src/janken_pkg/msg/Num.msg" NAME_WE)
 add_dependencies(janken_pkg_generate_messages_cpp _janken_pkg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/marubashi/practice_ws/src/janken_pkg/msg/Num.msg" NAME_WE)
+get_filename_component(_filename "/home/marubashi/ros_practice_ws/src/janken_pkg/srv/AddTwoInts.srv" NAME_WE)
 add_dependencies(janken_pkg_generate_messages_cpp _janken_pkg_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -75,7 +75,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS janken_pkg_generate_messages_cpp)
 ### Section generating for lang: geneus
 ### Generating Messages
 _generate_msg_eus(janken_pkg
-  "/home/marubashi/practice_ws/src/janken_pkg/msg/Num.msg"
+  "/home/marubashi/ros_practice_ws/src/janken_pkg/msg/Num.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/janken_pkg
@@ -83,7 +83,7 @@ _generate_msg_eus(janken_pkg
 
 ### Generating Services
 _generate_srv_eus(janken_pkg
-  "/home/marubashi/practice_ws/src/janken_pkg/srv/AddTwoInts.srv"
+  "/home/marubashi/ros_practice_ws/src/janken_pkg/srv/AddTwoInts.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/janken_pkg
@@ -101,9 +101,9 @@ add_custom_target(janken_pkg_generate_messages_eus
 add_dependencies(janken_pkg_generate_messages janken_pkg_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/marubashi/practice_ws/src/janken_pkg/srv/AddTwoInts.srv" NAME_WE)
+get_filename_component(_filename "/home/marubashi/ros_practice_ws/src/janken_pkg/msg/Num.msg" NAME_WE)
 add_dependencies(janken_pkg_generate_messages_eus _janken_pkg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/marubashi/practice_ws/src/janken_pkg/msg/Num.msg" NAME_WE)
+get_filename_component(_filename "/home/marubashi/ros_practice_ws/src/janken_pkg/srv/AddTwoInts.srv" NAME_WE)
 add_dependencies(janken_pkg_generate_messages_eus _janken_pkg_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -116,7 +116,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS janken_pkg_generate_messages_eus)
 ### Section generating for lang: genlisp
 ### Generating Messages
 _generate_msg_lisp(janken_pkg
-  "/home/marubashi/practice_ws/src/janken_pkg/msg/Num.msg"
+  "/home/marubashi/ros_practice_ws/src/janken_pkg/msg/Num.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/janken_pkg
@@ -124,7 +124,7 @@ _generate_msg_lisp(janken_pkg
 
 ### Generating Services
 _generate_srv_lisp(janken_pkg
-  "/home/marubashi/practice_ws/src/janken_pkg/srv/AddTwoInts.srv"
+  "/home/marubashi/ros_practice_ws/src/janken_pkg/srv/AddTwoInts.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/janken_pkg
@@ -142,9 +142,9 @@ add_custom_target(janken_pkg_generate_messages_lisp
 add_dependencies(janken_pkg_generate_messages janken_pkg_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/marubashi/practice_ws/src/janken_pkg/srv/AddTwoInts.srv" NAME_WE)
+get_filename_component(_filename "/home/marubashi/ros_practice_ws/src/janken_pkg/msg/Num.msg" NAME_WE)
 add_dependencies(janken_pkg_generate_messages_lisp _janken_pkg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/marubashi/practice_ws/src/janken_pkg/msg/Num.msg" NAME_WE)
+get_filename_component(_filename "/home/marubashi/ros_practice_ws/src/janken_pkg/srv/AddTwoInts.srv" NAME_WE)
 add_dependencies(janken_pkg_generate_messages_lisp _janken_pkg_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -157,7 +157,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS janken_pkg_generate_messages_lisp)
 ### Section generating for lang: gennodejs
 ### Generating Messages
 _generate_msg_nodejs(janken_pkg
-  "/home/marubashi/practice_ws/src/janken_pkg/msg/Num.msg"
+  "/home/marubashi/ros_practice_ws/src/janken_pkg/msg/Num.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/janken_pkg
@@ -165,7 +165,7 @@ _generate_msg_nodejs(janken_pkg
 
 ### Generating Services
 _generate_srv_nodejs(janken_pkg
-  "/home/marubashi/practice_ws/src/janken_pkg/srv/AddTwoInts.srv"
+  "/home/marubashi/ros_practice_ws/src/janken_pkg/srv/AddTwoInts.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/janken_pkg
@@ -183,9 +183,9 @@ add_custom_target(janken_pkg_generate_messages_nodejs
 add_dependencies(janken_pkg_generate_messages janken_pkg_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/marubashi/practice_ws/src/janken_pkg/srv/AddTwoInts.srv" NAME_WE)
+get_filename_component(_filename "/home/marubashi/ros_practice_ws/src/janken_pkg/msg/Num.msg" NAME_WE)
 add_dependencies(janken_pkg_generate_messages_nodejs _janken_pkg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/marubashi/practice_ws/src/janken_pkg/msg/Num.msg" NAME_WE)
+get_filename_component(_filename "/home/marubashi/ros_practice_ws/src/janken_pkg/srv/AddTwoInts.srv" NAME_WE)
 add_dependencies(janken_pkg_generate_messages_nodejs _janken_pkg_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -198,7 +198,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS janken_pkg_generate_messages_nodejs
 ### Section generating for lang: genpy
 ### Generating Messages
 _generate_msg_py(janken_pkg
-  "/home/marubashi/practice_ws/src/janken_pkg/msg/Num.msg"
+  "/home/marubashi/ros_practice_ws/src/janken_pkg/msg/Num.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/janken_pkg
@@ -206,7 +206,7 @@ _generate_msg_py(janken_pkg
 
 ### Generating Services
 _generate_srv_py(janken_pkg
-  "/home/marubashi/practice_ws/src/janken_pkg/srv/AddTwoInts.srv"
+  "/home/marubashi/ros_practice_ws/src/janken_pkg/srv/AddTwoInts.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/janken_pkg
@@ -224,9 +224,9 @@ add_custom_target(janken_pkg_generate_messages_py
 add_dependencies(janken_pkg_generate_messages janken_pkg_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/marubashi/practice_ws/src/janken_pkg/srv/AddTwoInts.srv" NAME_WE)
+get_filename_component(_filename "/home/marubashi/ros_practice_ws/src/janken_pkg/msg/Num.msg" NAME_WE)
 add_dependencies(janken_pkg_generate_messages_py _janken_pkg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/marubashi/practice_ws/src/janken_pkg/msg/Num.msg" NAME_WE)
+get_filename_component(_filename "/home/marubashi/ros_practice_ws/src/janken_pkg/srv/AddTwoInts.srv" NAME_WE)
 add_dependencies(janken_pkg_generate_messages_py _janken_pkg_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

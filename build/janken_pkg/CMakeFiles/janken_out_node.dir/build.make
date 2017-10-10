@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/marubashi/practice_ws/src
+CMAKE_SOURCE_DIR = /home/marubashi/ros_practice_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/marubashi/practice_ws/build
+CMAKE_BINARY_DIR = /home/marubashi/ros_practice_ws/build
 
 # Include any dependencies generated for this target.
 include janken_pkg/CMakeFiles/janken_out_node.dir/depend.make
@@ -58,17 +58,17 @@ include janken_pkg/CMakeFiles/janken_out_node.dir/progress.make
 include janken_pkg/CMakeFiles/janken_out_node.dir/flags.make
 
 janken_pkg/CMakeFiles/janken_out_node.dir/src/talker.cpp.o: janken_pkg/CMakeFiles/janken_out_node.dir/flags.make
-janken_pkg/CMakeFiles/janken_out_node.dir/src/talker.cpp.o: /home/marubashi/practice_ws/src/janken_pkg/src/talker.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marubashi/practice_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object janken_pkg/CMakeFiles/janken_out_node.dir/src/talker.cpp.o"
-	cd /home/marubashi/practice_ws/build/janken_pkg && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/janken_out_node.dir/src/talker.cpp.o -c /home/marubashi/practice_ws/src/janken_pkg/src/talker.cpp
+janken_pkg/CMakeFiles/janken_out_node.dir/src/talker.cpp.o: /home/marubashi/ros_practice_ws/src/janken_pkg/src/talker.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marubashi/ros_practice_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object janken_pkg/CMakeFiles/janken_out_node.dir/src/talker.cpp.o"
+	cd /home/marubashi/ros_practice_ws/build/janken_pkg && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/janken_out_node.dir/src/talker.cpp.o -c /home/marubashi/ros_practice_ws/src/janken_pkg/src/talker.cpp
 
 janken_pkg/CMakeFiles/janken_out_node.dir/src/talker.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/janken_out_node.dir/src/talker.cpp.i"
-	cd /home/marubashi/practice_ws/build/janken_pkg && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marubashi/practice_ws/src/janken_pkg/src/talker.cpp > CMakeFiles/janken_out_node.dir/src/talker.cpp.i
+	cd /home/marubashi/ros_practice_ws/build/janken_pkg && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marubashi/ros_practice_ws/src/janken_pkg/src/talker.cpp > CMakeFiles/janken_out_node.dir/src/talker.cpp.i
 
 janken_pkg/CMakeFiles/janken_out_node.dir/src/talker.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/janken_out_node.dir/src/talker.cpp.s"
-	cd /home/marubashi/practice_ws/build/janken_pkg && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marubashi/practice_ws/src/janken_pkg/src/talker.cpp -o CMakeFiles/janken_out_node.dir/src/talker.cpp.s
+	cd /home/marubashi/ros_practice_ws/build/janken_pkg && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marubashi/ros_practice_ws/src/janken_pkg/src/talker.cpp -o CMakeFiles/janken_out_node.dir/src/talker.cpp.s
 
 janken_pkg/CMakeFiles/janken_out_node.dir/src/talker.cpp.o.requires:
 
@@ -88,33 +88,33 @@ janken_out_node_OBJECTS = \
 # External object files for target janken_out_node
 janken_out_node_EXTERNAL_OBJECTS =
 
-/home/marubashi/practice_ws/devel/lib/janken_pkg/janken_out_node: janken_pkg/CMakeFiles/janken_out_node.dir/src/talker.cpp.o
-/home/marubashi/practice_ws/devel/lib/janken_pkg/janken_out_node: janken_pkg/CMakeFiles/janken_out_node.dir/build.make
-/home/marubashi/practice_ws/devel/lib/janken_pkg/janken_out_node: /opt/ros/kinetic/lib/libroscpp.so
-/home/marubashi/practice_ws/devel/lib/janken_pkg/janken_out_node: /usr/lib/x86_64-linux-gnu/libboost_signals.so
-/home/marubashi/practice_ws/devel/lib/janken_pkg/janken_out_node: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-/home/marubashi/practice_ws/devel/lib/janken_pkg/janken_out_node: /opt/ros/kinetic/lib/librosconsole.so
-/home/marubashi/practice_ws/devel/lib/janken_pkg/janken_out_node: /opt/ros/kinetic/lib/librosconsole_log4cxx.so
-/home/marubashi/practice_ws/devel/lib/janken_pkg/janken_out_node: /opt/ros/kinetic/lib/librosconsole_backend_interface.so
-/home/marubashi/practice_ws/devel/lib/janken_pkg/janken_out_node: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/marubashi/practice_ws/devel/lib/janken_pkg/janken_out_node: /usr/lib/x86_64-linux-gnu/libboost_regex.so
-/home/marubashi/practice_ws/devel/lib/janken_pkg/janken_out_node: /opt/ros/kinetic/lib/libxmlrpcpp.so
-/home/marubashi/practice_ws/devel/lib/janken_pkg/janken_out_node: /opt/ros/kinetic/lib/libroscpp_serialization.so
-/home/marubashi/practice_ws/devel/lib/janken_pkg/janken_out_node: /opt/ros/kinetic/lib/librostime.so
-/home/marubashi/practice_ws/devel/lib/janken_pkg/janken_out_node: /opt/ros/kinetic/lib/libcpp_common.so
-/home/marubashi/practice_ws/devel/lib/janken_pkg/janken_out_node: /usr/lib/x86_64-linux-gnu/libboost_system.so
-/home/marubashi/practice_ws/devel/lib/janken_pkg/janken_out_node: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-/home/marubashi/practice_ws/devel/lib/janken_pkg/janken_out_node: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-/home/marubashi/practice_ws/devel/lib/janken_pkg/janken_out_node: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-/home/marubashi/practice_ws/devel/lib/janken_pkg/janken_out_node: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-/home/marubashi/practice_ws/devel/lib/janken_pkg/janken_out_node: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/marubashi/practice_ws/devel/lib/janken_pkg/janken_out_node: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
-/home/marubashi/practice_ws/devel/lib/janken_pkg/janken_out_node: janken_pkg/CMakeFiles/janken_out_node.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/marubashi/practice_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/marubashi/practice_ws/devel/lib/janken_pkg/janken_out_node"
-	cd /home/marubashi/practice_ws/build/janken_pkg && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/janken_out_node.dir/link.txt --verbose=$(VERBOSE)
+/home/marubashi/ros_practice_ws/devel/lib/janken_pkg/janken_out_node: janken_pkg/CMakeFiles/janken_out_node.dir/src/talker.cpp.o
+/home/marubashi/ros_practice_ws/devel/lib/janken_pkg/janken_out_node: janken_pkg/CMakeFiles/janken_out_node.dir/build.make
+/home/marubashi/ros_practice_ws/devel/lib/janken_pkg/janken_out_node: /opt/ros/kinetic/lib/libroscpp.so
+/home/marubashi/ros_practice_ws/devel/lib/janken_pkg/janken_out_node: /usr/lib/x86_64-linux-gnu/libboost_signals.so
+/home/marubashi/ros_practice_ws/devel/lib/janken_pkg/janken_out_node: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+/home/marubashi/ros_practice_ws/devel/lib/janken_pkg/janken_out_node: /opt/ros/kinetic/lib/librosconsole.so
+/home/marubashi/ros_practice_ws/devel/lib/janken_pkg/janken_out_node: /opt/ros/kinetic/lib/librosconsole_log4cxx.so
+/home/marubashi/ros_practice_ws/devel/lib/janken_pkg/janken_out_node: /opt/ros/kinetic/lib/librosconsole_backend_interface.so
+/home/marubashi/ros_practice_ws/devel/lib/janken_pkg/janken_out_node: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/marubashi/ros_practice_ws/devel/lib/janken_pkg/janken_out_node: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+/home/marubashi/ros_practice_ws/devel/lib/janken_pkg/janken_out_node: /opt/ros/kinetic/lib/libxmlrpcpp.so
+/home/marubashi/ros_practice_ws/devel/lib/janken_pkg/janken_out_node: /opt/ros/kinetic/lib/libroscpp_serialization.so
+/home/marubashi/ros_practice_ws/devel/lib/janken_pkg/janken_out_node: /opt/ros/kinetic/lib/librostime.so
+/home/marubashi/ros_practice_ws/devel/lib/janken_pkg/janken_out_node: /opt/ros/kinetic/lib/libcpp_common.so
+/home/marubashi/ros_practice_ws/devel/lib/janken_pkg/janken_out_node: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/home/marubashi/ros_practice_ws/devel/lib/janken_pkg/janken_out_node: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/home/marubashi/ros_practice_ws/devel/lib/janken_pkg/janken_out_node: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+/home/marubashi/ros_practice_ws/devel/lib/janken_pkg/janken_out_node: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/home/marubashi/ros_practice_ws/devel/lib/janken_pkg/janken_out_node: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+/home/marubashi/ros_practice_ws/devel/lib/janken_pkg/janken_out_node: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/marubashi/ros_practice_ws/devel/lib/janken_pkg/janken_out_node: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
+/home/marubashi/ros_practice_ws/devel/lib/janken_pkg/janken_out_node: janken_pkg/CMakeFiles/janken_out_node.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/marubashi/ros_practice_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/marubashi/ros_practice_ws/devel/lib/janken_pkg/janken_out_node"
+	cd /home/marubashi/ros_practice_ws/build/janken_pkg && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/janken_out_node.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-janken_pkg/CMakeFiles/janken_out_node.dir/build: /home/marubashi/practice_ws/devel/lib/janken_pkg/janken_out_node
+janken_pkg/CMakeFiles/janken_out_node.dir/build: /home/marubashi/ros_practice_ws/devel/lib/janken_pkg/janken_out_node
 
 .PHONY : janken_pkg/CMakeFiles/janken_out_node.dir/build
 
@@ -123,10 +123,10 @@ janken_pkg/CMakeFiles/janken_out_node.dir/requires: janken_pkg/CMakeFiles/janken
 .PHONY : janken_pkg/CMakeFiles/janken_out_node.dir/requires
 
 janken_pkg/CMakeFiles/janken_out_node.dir/clean:
-	cd /home/marubashi/practice_ws/build/janken_pkg && $(CMAKE_COMMAND) -P CMakeFiles/janken_out_node.dir/cmake_clean.cmake
+	cd /home/marubashi/ros_practice_ws/build/janken_pkg && $(CMAKE_COMMAND) -P CMakeFiles/janken_out_node.dir/cmake_clean.cmake
 .PHONY : janken_pkg/CMakeFiles/janken_out_node.dir/clean
 
 janken_pkg/CMakeFiles/janken_out_node.dir/depend:
-	cd /home/marubashi/practice_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/marubashi/practice_ws/src /home/marubashi/practice_ws/src/janken_pkg /home/marubashi/practice_ws/build /home/marubashi/practice_ws/build/janken_pkg /home/marubashi/practice_ws/build/janken_pkg/CMakeFiles/janken_out_node.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/marubashi/ros_practice_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/marubashi/ros_practice_ws/src /home/marubashi/ros_practice_ws/src/janken_pkg /home/marubashi/ros_practice_ws/build /home/marubashi/ros_practice_ws/build/janken_pkg /home/marubashi/ros_practice_ws/build/janken_pkg/CMakeFiles/janken_out_node.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : janken_pkg/CMakeFiles/janken_out_node.dir/depend
 
